@@ -1,0 +1,28 @@
+<h2>Admin Login</h2>
+
+<%= form_with do |form| %>
+<div class="row">
+<div class="col-md-6">
+<div class="form_container">
+					        
+
+<%= form.text_field :name,:class=>"form-control", :placeholder=>"Name"%>
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-md-6">
+<div class="form_container">
+
+<%= form.password_field :password,:class=>"form-control", :placeholder=>"Password" %>
+</div>
+</div>
+</div>
+
+<br>
+<div class="form-group tm-d-flex">
+<%= form.submit "Login",:class=>"tm-btn tm-btn-success tm-btn-right" %>
+</div>
+
+<% end %> 
